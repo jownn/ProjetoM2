@@ -1,0 +1,58 @@
+﻿@model ProjetoM2.Models.Notas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Notas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.M1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.M1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.M2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.M2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Previsao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Previsao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Media)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Media)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
